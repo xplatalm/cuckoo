@@ -1,1 +1,9 @@
+queue:
+  name: Default
+steps:
+- task: CmdLine@1
+  inputs:
+    filename: "echo"
+    arguments: "hello yaml"
+
 
