@@ -6,4 +6,21 @@ steps:
     filename: "echo"
     arguments: "hello yaml"
 
+- script: |
+   echo hello > foo.txt
+   echo yaml > bar.txt 
 
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)'
+    Contents: '*.txt'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+  condition: undefined
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: drop
+    ArtifactType: Container
+  condition: undefined
+  
