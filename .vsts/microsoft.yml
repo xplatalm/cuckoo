@@ -15,12 +15,9 @@ steps:
     SourceFolder: '$(system.defaultworkingdirectory)'
     Contents: '*.txt'
     TargetFolder: '$(build.artifactstagingdirectory)'
-  condition: undefined
-
+  
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
     ArtifactName: drop
     ArtifactType: Container
-  condition: undefined
-  
