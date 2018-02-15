@@ -5,7 +5,7 @@ steps:
   inputs:
     filename: "echo"
     arguments: "hello yaml"
-- task: ArchiveFiles
+- task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: $(Build.BinariesDirectory)
     includeRootFolder: true
