@@ -5,5 +5,12 @@ steps:
   inputs:
     filename: "echo"
     arguments: "hello yaml"
+- task: ArchiveFiles
+  inputs:
+    rootFolderOrFile: $(Build.BinariesDirectory)
+    includeRootFolder: true
+    archiveType: zip
+    archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
+    replaceExistingArchive: true
 
 
