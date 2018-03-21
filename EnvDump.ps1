@@ -1,4 +1,4 @@
-$var = (gci env:*).GetEnumerator() | Sort-Object Name
+$var = (gci env:
 $out = ""
 Foreach ($v in $var) {$out = $out + "`t{0,-28} = {1,-28}`n" -f $v.Name, $v.Value}
  
