@@ -6,7 +6,3 @@ cross fingers
 
 another try
 42
-
-Can you believe this!
-another push
-hahaha
