@@ -1,0 +1,4 @@
+task "ci" {
+  use = "github-launch/microsoft-vsts-ci"
+  config = "<path-to-your-vstsci.yml>"
+}
