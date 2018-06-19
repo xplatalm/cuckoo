@@ -4,5 +4,5 @@ flow "ci-on-push" {
 }
 
 task "ci" {
-  uses = "MSMarketplaceTest"
+  uses = "VSTSTestApp"
 }
