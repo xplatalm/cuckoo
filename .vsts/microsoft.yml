@@ -1,5 +1,5 @@
 queue:
-  name: Default
+  name: "Hosted VS2017"
 steps:
 - task: CmdLine@1
   inputs:
