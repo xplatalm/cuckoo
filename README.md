@@ -2,4 +2,3 @@
 YAML testing
 
 Testing CI
-
